@@ -1,0 +1,12 @@
+.blog3 {
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+.blog3 h1 {
+    text-align: center;
+}
+.blog3 img {
+    width: 398px;
+    height: auto;
+}
