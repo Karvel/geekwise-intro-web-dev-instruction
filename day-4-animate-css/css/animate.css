@@ -2,48 +2,53 @@
 .bounce {
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: .5s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-name: bounce;
-    -moz-animation-name: bounce;
-    animation-name: bounce;
+    -webkit-animation-name: boogie;
+    -moz-animation-name: boogie;
+    animation-name: boogie;
 }
-
+​
 /*bounce animation*/
 @-webkit-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
-    40% {-webkit-transform: translateY(-30px);}
-    60% {-webkit-transform: translateY(-15px);}
+    40% {-webkit-transform: translateY(30px);}
+    60% {-webkit-transform: translateY(15px);}
 }
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
+@keyframes boogie {
+    0%, 20%, 50%, 80%, 100% {transform: translateX(0);}
+    40% {transform: translateY(30px);}
+    60% {transform: translateX(15px);}
 }
 
-/*rotate position and speed*/
+/*rotate position, speed and number of loops*/
 .rotate {
-    position: absolute;
-    -webkit-animation:spin 2s linear infinite;
-    -moz-animation:spin 2s linear infinite;
-    animation:spin 10s linear infinite;
+  position: absolute;
+  -webkit-animation:geekwise 2s linear infinite;
+  -moz-animation:geekwise 2s linear infinite;
+  animation:geekwise 2s linear infinite;
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { transform:rotate(360deg); } }
 
+/*rotate animation*/
+@-moz-keyframes geekwise { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes geekwise { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes geekwise { 100% { transform:rotate(-360deg); } }
+
+/*Box for div elements*/
 .box {
   height: 400px;
   width: 400px;
   float: right;
 }
 
+/*Background color change animation*/
 .gradient {
   animation: pulse 5s infinite;
 }
 
+/*Background color change speed and number of loops*/
 @keyframes pulse {
   0% {
     background-color: grey;
@@ -56,6 +61,42 @@
   }
 }
 
-/*.crazyness {
-    transform:rotate(360deg);
-}*/
+/*Text color change speed and number of loops*/
+.text-gradient {
+  animation: pulse2 5s infinite;
+}
+
+/*Text color change animation*/
+@keyframes pulse2 {
+  0% {
+    color: red;
+  }
+  33% {
+    color: teal;
+  }
+  66% {
+    color: green;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/*scale speed and number of loops*/
+.scale {
+  animation: resize 3s;
+  animation-iteration-count: infinite;
+}
+
+/*scale animation*/
+@keyframes resize {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(2, .75);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
