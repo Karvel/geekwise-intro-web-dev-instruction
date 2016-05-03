@@ -1,0 +1,252 @@
+/* Portfolio template styling */
+/* Global styles */
+
+body, html {
+    margin: 0;
+    font-family: 'Faster One', cursive;
+    /*font-family: 'Playfair Display SC', serif;*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #afedb1;
+}
+
+.logo {
+    width: 400px;
+    height: 100%;
+    float: left;
+}
+
+.logo h1 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.menu {
+    height: 100%;
+    width: 400px;
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.menu ul {
+    position: relative;
+    top: 35px;
+}
+
+/*Banner styling*/
+#banner {
+    height: 300px;
+    width: 100%;
+    /*background-color: #afedb1;*/
+    background: url('../img/gc-moon.jpg'); background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#banner h1 {
+    text-align: center;
+    padding-top: 90px;
+    font-size: 3em;
+    color: #fff;
+}
+
+/*skills styling*/
+#skills {
+    height: 450px;
+    width: 100%;
+    background-color: #afedbf;
+    padding-top: 50px;
+}
+
+.skills-container {
+    height: 75%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#skills article {
+    width: 25%;
+    height: 100%;
+    background-color: #68865f;
+    float: left;
+    margin: 0 21px;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+#skills article h2 {
+    text-align: center;
+}
+
+#skills article p {
+    text-align: justify;
+}
+
+#about {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #9dd69f;
+    display: inline-block;
+}
+
+#about img {
+    margin-left: 20%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+#about h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#about p {
+    padding: 0 20px;
+}
+
+.img-box {
+    height: 400px;
+    width: 25%;
+    float: left;
+    /*background-color: #77d47a;*/
+}
+
+.img-container {
+    height: 200px;
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.about-info {
+    height: 400px;
+    width: 75%;
+    float: left;
+    /*background-color: #a1eea3;*/
+}
+
+.about-content {
+    height: 200px;
+    width: 800px;
+    border: 2px dashed #000000;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+#contact {
+    width: 100%;
+    padding: 25px 0;
+    background: url(../img/snow-bowl.jpg); background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: inline-block;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#contact input {
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contact textarea {
+    height: 125px;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+}
+
+#contact button {
+    height: 40px;
+    width: 125px;
+    margin: 10px 0;
+    background-color: white;
+    border: 0;
+}
+
+#contact button:hover {
+    background-color: grey;
+}
+
+.form-box {
+    height: 300px;
+    width: 500px;
+    margin: 25px auto;
+    background-color: rgba(66, 119, 58, 0.5);
+    padding: 30px 30px 60px;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #afedb1;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.sm-icons {
+    width: 182px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    float: left;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.icon i {
+    font-size: 2em;
+    padding: 10px;
+}
+
+.icon:hover {
+    color: grey;
+}
+
+/*rotate animation*/
+.rotate {
+  position: absolute;
+  -webkit-animation:geekwise 2s linear infinite;
+  -moz-animation:geekwise 2s linear infinite;
+  animation:geekwise 2s linear infinite;
+}
+
+@-moz-keyframes geekwise { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes geekwise { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes geekwise { 100% { transform:rotate(-360deg); } }
